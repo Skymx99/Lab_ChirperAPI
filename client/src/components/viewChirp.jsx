@@ -51,6 +51,7 @@ class ViewChirp extends Component {
     }
 
     deleteChirp() {
+        console.log(this.props.match.params.id);
         fetch(`/api/chirps/${this.props.match.params.id}`, {
             method: 'DELETE',
             headers: {
@@ -73,10 +74,9 @@ class ViewChirp extends Component {
                 </div>
                 <div>
 
-                    <Details id={this.props.match.params.id} chirp={this.state.chirp} />
+                    <Details id={this.props.match.params.id} chirp={this.state.chirp} onDelete={() => { this.deleteChirp(this.props.id); }}/>
                     <ChirpForm postChirp={(text) => { this.updateChirp(text); }} />
 
-                    <button className="btn btn-primary" onClick={() => { this.deleteChirp(); }}>Delete</button>
                 </div>
                 {/* </div> */}
             </Fragment>);

@@ -4,7 +4,6 @@ import viewChirp from './viewChirp';
 
 class Details extends React.Component {
 
-
     render() {
         return (
             <div className="container mt-3">
@@ -19,6 +18,8 @@ class Details extends React.Component {
                             <div className="card-body">
                                 <blockquote className="blockquote mb-0">
                                     <p>{this.props.chirp.text}</p>
+                                    <button className="btn btn-primary" onClick={() => { this.props.onDelete(); }}>Delete</button>
+
                                     {/* <Link className="btn btn-primary" to={`/chirps/update/${this.props.id}`}>Edit</Link> */}
                                     <footer className="blockquote-footer">Alex Lewis <cite title="Source Title">LCQ Studios</cite></footer>
                                 </blockquote>
