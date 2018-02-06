@@ -1,0 +1,60 @@
+body {
+    background-color: #22afa7;
+}
+
+
+.App {
+    text-align: center;
+  }
+
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+    height: 100px;
+  }
+
+  .App-header {
+    background-color: #0B3954;
+    height: 225px;
+    padding: 20px;
+    color: white;
+    background-image: url(../img/header.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .App-title {
+    font-size: 1.5em;
+  }
+
+  .App-intro {
+    font-size: large;
+    margin-top: 50px;
+    font-style: italic;
+  }
+
+  @keyframes App-logo-spin {
+    from { transform: rotate(-20deg); }
+    to { transform: rotate(-20deg); }
+  }
+
+  .card-body {
+    background-color: #fff;
+}
+
+.card {
+    background-color: #c41572;
+}
+
+.card-header {
+    background-color: #bdd647;
+    font-size: 1.5em;
+}
+
+h1.App-title {
+    font-size: 3em;
+}
+
+.d-block {
+    font-size: 1.5em;
+}
